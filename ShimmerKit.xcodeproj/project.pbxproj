@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A69290227E619070054698F /* ShimmerKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1A69290127E619070054698F /* ShimmerKit.podspec */; };
 		1A86EFFB27E5B527002256CB /* ShimmerKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = 1A86EFFA27E5B527002256CB /* ShimmerKit.docc */; };
 		1A86F00127E5B527002256CB /* ShimmerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A86EFF627E5B526002256CB /* ShimmerKit.framework */; };
 		1A86F00627E5B527002256CB /* ShimmerKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A86F00527E5B527002256CB /* ShimmerKitTests.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A69290127E619070054698F /* ShimmerKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShimmerKit.podspec; sourceTree = SOURCE_ROOT; };
 		1A86EFF627E5B526002256CB /* ShimmerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShimmerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A86EFF927E5B527002256CB /* ShimmerKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShimmerKit.h; sourceTree = "<group>"; };
 		1A86EFFA27E5B527002256CB /* ShimmerKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ShimmerKit.docc; sourceTree = "<group>"; };
@@ -58,23 +60,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A6928FF27E6163E0054698F /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				1AB5288427E5DFE900943BCB /* ViewShimmerable+Extension.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		1A69290027E616550054698F /* UIComponents */ = {
-			isa = PBXGroup;
-			children = (
-				1A86F01127E5B531002256CB /* ShimmerView.swift */,
-				1A86F01227E5B531002256CB /* ShimmerContainerView.swift */,
-			);
-			path = UIComponents;
-			sourceTree = "<group>";
-		};
 		1A86EFEC27E5B526002256CB = {
 			isa = PBXGroup;
 			children = (
@@ -96,7 +81,11 @@
 		1A86EFF827E5B526002256CB /* ShimmerKit */ = {
 			isa = PBXGroup;
 			children = (
-				1A86F01027E5B531002256CB /* Sources */,
+				1A69290127E619070054698F /* ShimmerKit.podspec */,
+				1A86F01127E5B531002256CB /* ShimmerView.swift */,
+				1AB5288427E5DFE900943BCB /* ViewShimmerable+Extension.swift */,
+				1A86F01227E5B531002256CB /* ShimmerContainerView.swift */,
+				1A86F01327E5B531002256CB /* ViewShimmerable.swift */,
 				1A86EFF927E5B527002256CB /* ShimmerKit.h */,
 				1A86EFFA27E5B527002256CB /* ShimmerKit.docc */,
 			);
@@ -109,16 +98,6 @@
 				1A86F00527E5B527002256CB /* ShimmerKitTests.swift */,
 			);
 			path = ShimmerKitTests;
-			sourceTree = "<group>";
-		};
-		1A86F01027E5B531002256CB /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				1A69290027E616550054698F /* UIComponents */,
-				1A6928FF27E6163E0054698F /* Extensions */,
-				1A86F01327E5B531002256CB /* ViewShimmerable.swift */,
-			);
-			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A69290227E619070054698F /* ShimmerKit.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

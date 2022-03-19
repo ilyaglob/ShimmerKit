@@ -58,6 +58,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A6928FF27E6163E0054698F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1AB5288427E5DFE900943BCB /* ViewShimmerable+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1A69290027E616550054698F /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				1A86F01127E5B531002256CB /* ShimmerView.swift */,
+				1A86F01227E5B531002256CB /* ShimmerContainerView.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
 		1A86EFEC27E5B526002256CB = {
 			isa = PBXGroup;
 			children = (
@@ -97,10 +114,9 @@
 		1A86F01027E5B531002256CB /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				1A86F01127E5B531002256CB /* ShimmerView.swift */,
-				1A86F01227E5B531002256CB /* ShimmerContainerView.swift */,
+				1A69290027E616550054698F /* UIComponents */,
+				1A6928FF27E6163E0054698F /* Extensions */,
 				1A86F01327E5B531002256CB /* ViewShimmerable.swift */,
-				1AB5288427E5DFE900943BCB /* ViewShimmerable+Extension.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";

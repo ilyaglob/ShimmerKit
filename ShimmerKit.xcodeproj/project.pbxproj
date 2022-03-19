@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A69290227E619070054698F /* ShimmerKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1A69290127E619070054698F /* ShimmerKit.podspec */; };
 		1A86EFFB27E5B527002256CB /* ShimmerKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = 1A86EFFA27E5B527002256CB /* ShimmerKit.docc */; };
 		1A86F00127E5B527002256CB /* ShimmerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A86EFF627E5B526002256CB /* ShimmerKit.framework */; };
 		1A86F00627E5B527002256CB /* ShimmerKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A86F00527E5B527002256CB /* ShimmerKitTests.swift */; };
 		1A86F00727E5B527002256CB /* ShimmerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A86EFF927E5B527002256CB /* ShimmerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AB5288127E5DF9E00943BCB /* ShimmerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A86F01227E5B531002256CB /* ShimmerContainerView.swift */; };
+		1AB5288227E5DF9E00943BCB /* ShimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A86F01127E5B531002256CB /* ShimmerView.swift */; };
+		1AB5288327E5DF9E00943BCB /* ViewShimmerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A86F01327E5B531002256CB /* ViewShimmerable.swift */; };
+		1AB5288627E5E09400943BCB /* ViewShimmerable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB5288427E5DFE900943BCB /* ViewShimmerable+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A69290127E619070054698F /* ShimmerKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShimmerKit.podspec; sourceTree = SOURCE_ROOT; };
 		1A86EFF627E5B526002256CB /* ShimmerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShimmerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A86EFF927E5B527002256CB /* ShimmerKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShimmerKit.h; sourceTree = "<group>"; };
 		1A86EFFA27E5B527002256CB /* ShimmerKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ShimmerKit.docc; sourceTree = "<group>"; };
@@ -31,7 +37,8 @@
 		1A86F00527E5B527002256CB /* ShimmerKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerKitTests.swift; sourceTree = "<group>"; };
 		1A86F01127E5B531002256CB /* ShimmerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerView.swift; sourceTree = "<group>"; };
 		1A86F01227E5B531002256CB /* ShimmerContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerContainerView.swift; sourceTree = "<group>"; };
-		1A86F01327E5B531002256CB /* ViewShimmerableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewShimmerableProtocol.swift; sourceTree = "<group>"; };
+		1A86F01327E5B531002256CB /* ViewShimmerable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewShimmerable.swift; sourceTree = "<group>"; };
+		1AB5288427E5DFE900943BCB /* ViewShimmerable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewShimmerable+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +81,11 @@
 		1A86EFF827E5B526002256CB /* ShimmerKit */ = {
 			isa = PBXGroup;
 			children = (
-				1A86F01027E5B531002256CB /* Sources */,
+				1A69290127E619070054698F /* ShimmerKit.podspec */,
+				1A86F01127E5B531002256CB /* ShimmerView.swift */,
+				1AB5288427E5DFE900943BCB /* ViewShimmerable+Extension.swift */,
+				1A86F01227E5B531002256CB /* ShimmerContainerView.swift */,
+				1A86F01327E5B531002256CB /* ViewShimmerable.swift */,
 				1A86EFF927E5B527002256CB /* ShimmerKit.h */,
 				1A86EFFA27E5B527002256CB /* ShimmerKit.docc */,
 			);
@@ -87,16 +98,6 @@
 				1A86F00527E5B527002256CB /* ShimmerKitTests.swift */,
 			);
 			path = ShimmerKitTests;
-			sourceTree = "<group>";
-		};
-		1A86F01027E5B531002256CB /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				1A86F01127E5B531002256CB /* ShimmerView.swift */,
-				1A86F01227E5B531002256CB /* ShimmerContainerView.swift */,
-				1A86F01327E5B531002256CB /* ViewShimmerableProtocol.swift */,
-			);
-			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A69290227E619070054698F /* ShimmerKit.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +210,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AB5288227E5DF9E00943BCB /* ShimmerView.swift in Sources */,
+				1AB5288627E5E09400943BCB /* ViewShimmerable+Extension.swift in Sources */,
+				1AB5288127E5DF9E00943BCB /* ShimmerContainerView.swift in Sources */,
+				1AB5288327E5DF9E00943BCB /* ViewShimmerable.swift in Sources */,
 				1A86EFFB27E5B527002256CB /* ShimmerKit.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +420,7 @@
 		1A86F00E27E5B527002256CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z4HPDN58GD;
@@ -435,6 +442,7 @@
 		1A86F00F27E5B527002256CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z4HPDN58GD;

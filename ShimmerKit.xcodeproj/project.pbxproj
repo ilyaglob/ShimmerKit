@@ -29,6 +29,9 @@
 		1A86EFFA27E5B527002256CB /* ShimmerKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ShimmerKit.docc; sourceTree = "<group>"; };
 		1A86F00027E5B527002256CB /* ShimmerKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShimmerKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A86F00527E5B527002256CB /* ShimmerKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerKitTests.swift; sourceTree = "<group>"; };
+		1A86F01127E5B531002256CB /* ShimmerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerView.swift; sourceTree = "<group>"; };
+		1A86F01227E5B531002256CB /* ShimmerContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerContainerView.swift; sourceTree = "<group>"; };
+		1A86F01327E5B531002256CB /* ViewShimmerableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewShimmerableProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,7 @@
 		1A86EFF827E5B526002256CB /* ShimmerKit */ = {
 			isa = PBXGroup;
 			children = (
+				1A86F01027E5B531002256CB /* Sources */,
 				1A86EFF927E5B527002256CB /* ShimmerKit.h */,
 				1A86EFFA27E5B527002256CB /* ShimmerKit.docc */,
 			);
@@ -83,6 +87,16 @@
 				1A86F00527E5B527002256CB /* ShimmerKitTests.swift */,
 			);
 			path = ShimmerKitTests;
+			sourceTree = "<group>";
+		};
+		1A86F01027E5B531002256CB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1A86F01127E5B531002256CB /* ShimmerView.swift */,
+				1A86F01227E5B531002256CB /* ShimmerContainerView.swift */,
+				1A86F01327E5B531002256CB /* ViewShimmerableProtocol.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,6 +375,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.collection.view.com.ShimmerKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -389,6 +404,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.collection.view.com.ShimmerKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
